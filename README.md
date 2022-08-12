@@ -1,19 +1,38 @@
-# npm-package-template
+# grammy-reply-with-markdown
 
-npm-package-template
+replyWithMarkdown method for grammY. Uses [telegram-md](https://www.npmjs.org/package/telegram-md)
 
-![GitHub CI](https://img.shields.io/github/workflow/status/vlad-yakovlev/npm-package-template/CI/main?label=github-ci)
-[![Codecov](https://img.shields.io/codecov/c/github/vlad-yakovlev/npm-package-template/main)](https://codecov.io/gh/vlad-yakovlev/npm-package-template)
-[![NPM](https://img.shields.io/npm/v/npm-package-template)](https://www.npmjs.org/package/npm-package-template)
+![GitHub CI](https://img.shields.io/github/workflow/status/vlad-yakovlev/grammy-reply-with-markdown/CI/main?label=github-ci)
+[![Codecov](https://img.shields.io/codecov/c/github/vlad-yakovlev/grammy-reply-with-markdown/main)](https://codecov.io/gh/vlad-yakovlev/grammy-reply-with-markdown)
+[![NPM](https://img.shields.io/npm/v/grammy-reply-with-markdown)](https://www.npmjs.org/package/grammy-reply-with-markdown)
 
 ## How to install
 
 ```sh
-npm install npm-package-template
+npm install grammy-reply-with-markdown
 ```
 
 ## How to use
 
 ```ts
-// TBD
+import { Bot, Context } from 'grammy';
+import { ReplyWithMarkdownFlavour, replyWithMarkdownPlugin } from 'grammy-reply-with-markdown';
+import { md } from 'telegram-md';
+
+(async () => {
+  const bot = new Bot<Context & ReplyWithMarkdownFlavour>('<bot-token>');
+
+  bot.use(replyWithMarkdownPlugin());
+
+  bot.command('start', async (ctx) => {
+    // Send simple string (all special characters will be escaped)
+    await ctx.replyWithMarkdown('Hello, World!');
+
+    // Send Markdown (read more about `md` here: https://www.npmjs.org/package/telegram-md)
+    await ctx.replyWithMarkdown(md`Hello, ${md.bold(World)}!`);
+
+    // Options will be passed to ctx.reply
+    await ctx.replyWithMarkdown('foo-bar', { reply_markup: { keyboard: [] });
+  });
+})()
 ```
