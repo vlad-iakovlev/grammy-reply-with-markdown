@@ -1,0 +1,7 @@
+/src
+tsconfig.json
+.eslintignore
+.github
+.husky
+*.test.js
+*.test.d.ts
