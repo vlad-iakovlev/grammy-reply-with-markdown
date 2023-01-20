@@ -2,7 +2,7 @@
 
 replyWithMarkdown method for grammY. Uses [telegram-md](https://www.npmjs.org/package/telegram-md)
 
-![GitHub CI](https://img.shields.io/github/workflow/status/vlad-yakovlev/grammy-reply-with-markdown/CI/main?label=github-ci)
+![GitHub CI](https://img.shields.io/github/actions/workflow/status/vlad-yakovlev/grammy-reply-with-markdown/ci.yml?branch=main&label=github-ci)
 [![Codecov](https://img.shields.io/codecov/c/github/vlad-yakovlev/grammy-reply-with-markdown/main)](https://codecov.io/gh/vlad-yakovlev/grammy-reply-with-markdown)
 [![NPM](https://img.shields.io/npm/v/grammy-reply-with-markdown)](https://www.npmjs.org/package/grammy-reply-with-markdown)
 
