@@ -28,23 +28,23 @@
   "bugs": "https://github.com/vlad-yakovlev/grammy-reply-with-markdown/issues",
   "homepage": "https://github.com/vlad-yakovlev/grammy-reply-with-markdown#readme",
   "dependencies": {
-    "telegram-md": "^1.2.3"
+    "telegram-md": "^1.3.1"
   },
   "devDependencies": {
     "@types/debug": "^4.1.7",
-    "@types/jest": "^28.1.6",
-    "@types/node": "^18.16.3",
-    "@types/node-fetch": "^2.6.2",
-    "@typescript-eslint/eslint-plugin": "^5.33.0",
-    "@typescript-eslint/parser": "^5.33.0",
-    "eslint": "^8.21.0",
+    "@types/jest": "^28.1.8",
+    "@types/node": "^18.16.6",
+    "@types/node-fetch": "^2.6.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.5",
+    "@typescript-eslint/parser": "^5.59.5",
+    "eslint": "^8.40.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "grammy": "^1.10.1",
-    "husky": "^8.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "grammy": "^1.16.0",
+    "husky": "^8.0.3",
     "jest": "^28.1.3",
-    "ts-jest": "^28.0.7",
+    "ts-jest": "^28.0.8",
     "typescript": "^5.0.4"
   },
   "files": [
