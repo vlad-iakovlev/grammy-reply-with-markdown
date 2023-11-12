@@ -31,10 +31,10 @@
     "telegram-md": "^1.3.1"
   },
   "devDependencies": {
-    "@types/debug": "^4.1.10",
-    "@types/jest": "^29.5.7",
-    "@types/node": "^20.8.10",
-    "@types/node-fetch": "^2.6.8",
+    "@types/debug": "^4.1.12",
+    "@types/jest": "^29.5.8",
+    "@types/node": "^20.9.0",
+    "@types/node-fetch": "^2.6.9",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "eslint": "^8.53.0",
     "eslint-config-airbnb-base": "^15.0.0",
