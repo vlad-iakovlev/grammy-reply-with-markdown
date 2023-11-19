@@ -1,6 +1,6 @@
 # grammy-reply-with-markdown
 
-replyWithMarkdown method for grammY. Uses [telegram-md](https://www.npmjs.org/package/telegram-md)
+replyWithMarkdown method for grammY. Uses [@vlad-yakovlev/telegram-md](https://www.npmjs.org/package/@vlad-yakovlev/telegram-md)
 
 ![GitHub CI](https://img.shields.io/github/actions/workflow/status/vlad-yakovlev/grammy-reply-with-markdown/ci.yml?branch=main&label=github-ci)
 [![Codecov](https://img.shields.io/codecov/c/github/vlad-yakovlev/grammy-reply-with-markdown/main)](https://codecov.io/gh/vlad-yakovlev/grammy-reply-with-markdown)
