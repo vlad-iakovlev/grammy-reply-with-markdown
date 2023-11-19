@@ -1,5 +1,5 @@
-import { Context, NextFunction } from 'grammy';
-import { Markdown, md } from 'telegram-md';
+import { Markdown, md } from '@vlad-yakovlev/telegram-md'
+import { Context, NextFunction } from 'grammy'
 
 function replyWithMarkdown(
   this: Context,
@@ -14,14 +14,15 @@ function replyWithMarkdown(
       ...other,
     },
     signal,
-  );
+  )
 }
 
 export interface ReplyWithMarkdownFlavour {
   replyWithMarkdown: typeof replyWithMarkdown
 }
 
-export const replyWithMarkdownPlugin = () => async (ctx: Context & ReplyWithMarkdownFlavour, next: NextFunction) => {
-  ctx.replyWithMarkdown = replyWithMarkdown;
-  await next();
-};
+export const replyWithMarkdownPlugin =
+  () => async (ctx: Context & ReplyWithMarkdownFlavour, next: NextFunction) => {
+    ctx.replyWithMarkdown = replyWithMarkdown
+    await next()
+  }

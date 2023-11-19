@@ -4,19 +4,24 @@ replyWithMarkdown method for grammY. Uses [telegram-md](https://www.npmjs.org/pa
 
 ![GitHub CI](https://img.shields.io/github/actions/workflow/status/vlad-yakovlev/grammy-reply-with-markdown/ci.yml?branch=main&label=github-ci)
 [![Codecov](https://img.shields.io/codecov/c/github/vlad-yakovlev/grammy-reply-with-markdown/main)](https://codecov.io/gh/vlad-yakovlev/grammy-reply-with-markdown)
-[![NPM](https://img.shields.io/npm/v/grammy-reply-with-markdown)](https://www.npmjs.org/package/grammy-reply-with-markdown)
+[![NPM](https://img.shields.io/npm/v/@vlad-yakovlev/grammy-reply-with-markdown)](https://www.npmjs.org/package/@vlad-yakovlev/grammy-reply-with-markdown)
+
+## Table of Contents
+
+1. [How to Install](#how-to-install)
+2. [Usage Examples](#usage-examples)
 
 ## How to install
 
 ```sh
-npm install grammy-reply-with-markdown
+npm install @vlad-yakovlev/grammy-reply-with-markdown
 ```
 
-## How to use
+## Usage Examples
 
 ```ts
 import { Bot, Context } from 'grammy';
-import { ReplyWithMarkdownFlavour, replyWithMarkdownPlugin } from 'grammy-reply-with-markdown';
+import { ReplyWithMarkdownFlavour, replyWithMarkdownPlugin } from '@vlad-yakovlev/grammy-reply-with-markdown';
 import { md } from 'telegram-md';
 
 (async () => {
