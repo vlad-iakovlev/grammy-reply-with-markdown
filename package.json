@@ -16,7 +16,7 @@
     "test": "jest --coverage",
     "test:ci": "jest"
   },
-  "repository": "https://github.com/vlad-yakovlev/grammy-reply-with-markdown.git",
+  "repository": "https://github.com/vlad-iakovlev/grammy-reply-with-markdown.git",
   "keywords": [
     "grammy",
     "telegram",
@@ -29,8 +29,8 @@
   ],
   "author": "Vladislav Yakovlev",
   "license": "MIT",
-  "bugs": "https://github.com/vlad-yakovlev/grammy-reply-with-markdown/issues",
-  "homepage": "https://github.com/vlad-yakovlev/grammy-reply-with-markdown#readme",
+  "bugs": "https://github.com/vlad-iakovlev/grammy-reply-with-markdown/issues",
+  "homepage": "https://github.com/vlad-iakovlev/grammy-reply-with-markdown#readme",
   "dependencies": {
     "@vlad-yakovlev/telegram-md": "^2.0.0"
   },
