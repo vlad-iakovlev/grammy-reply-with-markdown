@@ -31,20 +31,20 @@
   "bugs": "https://github.com/vlad-iakovlev/grammy-reply-with-markdown/issues",
   "homepage": "https://github.com/vlad-iakovlev/grammy-reply-with-markdown#readme",
   "dependencies": {
-    "@vlad-yakovlev/telegram-md": "^2.0.0"
+    "@vlad-yakovlev/telegram-md": "^2.1.0"
   },
   "devDependencies": {
     "@swc/jest": "^0.2.38",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/jest": "^30.0.0",
-    "@types/node": "^18.19.113",
+    "@types/node": "^18.19.115",
     "@types/node-fetch": "^2.6.12",
-    "@typescript-eslint/eslint-plugin": "^8.35.0",
+    "@typescript-eslint/eslint-plugin": "^8.35.1",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.5",
     "grammy": "^1.36.3",
-    "jest": "^30.0.3",
-    "lefthook": "^1.11.14",
+    "jest": "^30.0.4",
+    "lefthook": "^1.11.16",
     "prettier": "^3.6.2",
     "typescript": "^5.8.3"
   },
