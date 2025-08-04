@@ -22,9 +22,7 @@ export interface ReplyWithMarkdownFlavour {
 }
 
 export const replyWithMarkdownPlugin =
-  () =>
-  // eslint-disable-next-line unicorn/consistent-function-scoping
-  async (context: Context & ReplyWithMarkdownFlavour, next: NextFunction) => {
-    context.replyWithMarkdown = replyWithMarkdown
+  () => async (ctx: Context & ReplyWithMarkdownFlavour, next: NextFunction) => {
+    ctx.replyWithMarkdown = replyWithMarkdown
     await next()
   }
