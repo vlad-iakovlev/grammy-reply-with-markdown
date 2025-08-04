@@ -17,7 +17,7 @@ function replyWithMarkdown(
   )
 }
 
-export interface ReplyWithMarkdownFlavour {
+export type ReplyWithMarkdownFlavour = {
   replyWithMarkdown: typeof replyWithMarkdown
 }
 
