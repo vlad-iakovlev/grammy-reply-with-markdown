@@ -1,24 +1,36 @@
 import { Context } from 'grammy'
+import { expect, test, vi } from 'vitest'
 import { ReplyWithMarkdownFlavour, replyWithMarkdownPlugin } from './index.js'
 
 test('should set ctx.replyWithMarkdown and call next', async () => {
   const ctx = {} as any
-  const next = jest.fn()
+  const order: string[] = []
+  const next = vi.fn().mockImplementation(async () => {
+    order.push('next1')
+    await new Promise((resolve) => setTimeout(resolve, 0))
+    order.push('next2')
+  })
 
+  order.push('start')
   await replyWithMarkdownPlugin()(ctx, next)
+  order.push('end')
 
   expect(ctx.replyWithMarkdown).toBeInstanceOf(Function)
-  expect(next).toHaveBeenCalledWith() // TODO: test that async was used
+  expect(next).toHaveBeenCalledWith()
+  expect(order).toEqual(['start', 'next1', 'next2', 'end'])
 })
 
 test('should run correctly when only text presented', async () => {
-  const ctx = { reply: jest.fn() } as any as Context & ReplyWithMarkdownFlavour
-  const next = jest.fn()
+  const reply = vi.fn<Context['reply']>()
+  const ctx = {
+    reply: reply as Context['reply'],
+  } as Context & ReplyWithMarkdownFlavour
+  const next = vi.fn()
 
   await replyWithMarkdownPlugin()(ctx, next)
   await ctx.replyWithMarkdown('text_test')
 
-  expect(ctx.reply).toHaveBeenCalledWith(
+  expect(reply).toHaveBeenCalledWith(
     'text\\_test',
     { parse_mode: 'MarkdownV2' },
     undefined,
@@ -26,8 +38,11 @@ test('should run correctly when only text presented', async () => {
 })
 
 test('should pass arguments to ctx.reply', async () => {
-  const ctx = { reply: jest.fn() } as any as Context & ReplyWithMarkdownFlavour
-  const next = jest.fn()
+  const reply = vi.fn<Context['reply']>()
+  const ctx = {
+    reply: reply as Context['reply'],
+  } as Context & ReplyWithMarkdownFlavour
+  const next = vi.fn()
   const signal = {} as any
 
   await replyWithMarkdownPlugin()(ctx, next)
@@ -37,7 +52,7 @@ test('should pass arguments to ctx.reply', async () => {
     signal,
   )
 
-  expect(ctx.reply).toHaveBeenCalledWith(
+  expect(reply).toHaveBeenCalledWith(
     'text\\_test',
     { parse_mode: 'MarkdownV2', reply_markup: { keyboard: [] } },
     signal,
