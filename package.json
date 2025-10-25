@@ -13,8 +13,8 @@
     "prettier": "prettier --write '**/*.(ts|js|md|json)'",
     "prettier:ci": "prettier --check '**/*.(ts|js|md|json)'",
     "test": "vitest run --coverage --coverage.include='src/**/*.ts'",
-    "test:ci": "prisma generate && vitest",
-    "test:codecov": "prisma generate && npx vitest run --coverage --coverage.include='src/**/*.ts'"
+    "test:ci": "vitest",
+    "test:codecov": "npx vitest run --coverage --coverage.include='src/**/*.ts'"
   },
   "repository": "https://github.com/vlad-iakovlev/grammy-reply-with-markdown.git",
   "keywords": [
