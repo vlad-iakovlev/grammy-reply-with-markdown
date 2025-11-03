@@ -35,11 +35,12 @@
     "@vlad-yakovlev/telegram-md": "^2.1.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.0",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/node": "^22.18.12",
     "@types/node-fetch": "^2.6.13",
     "@vitest/coverage-v8": "^4.0.3",
-    "eslint": "^9.38.0",
+    "eslint": "9.38.0",
     "eslint-config-prettier": "^10.1.8",
     "grammy": "^1.38.3",
     "jiti": "^2.6.1",
@@ -48,5 +49,9 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.2",
     "vitest": "^4.0.3"
+  },
+  "overrides": {
+    "@eslint/config-helpers": "0.4.1",
+    "@eslint/plugin-kit": "0.4.0"
   }
 }
