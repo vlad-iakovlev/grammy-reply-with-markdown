@@ -2,6 +2,21 @@
   "name": "@vlad-yakovlev/grammy-reply-with-markdown",
   "version": "0.0.0",
   "description": "replyWithMarkdown method for grammY",
+  "keywords": [
+    "grammy",
+    "telegram",
+    "markdown",
+    "md",
+    "reply",
+    "send",
+    "message",
+    "sendMessage"
+  ],
+  "homepage": "https://github.com/vlad-iakovlev/grammy-reply-with-markdown#readme",
+  "bugs": "https://github.com/vlad-iakovlev/grammy-reply-with-markdown/issues",
+  "repository": "https://github.com/vlad-iakovlev/grammy-reply-with-markdown.git",
+  "license": "MIT",
+  "author": "Vladislav Iakovlev",
   "type": "module",
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -16,21 +31,6 @@
     "test:ci": "vitest run",
     "test:codecov": "npx vitest run --coverage --coverage.include='src/**/*.ts'"
   },
-  "repository": "https://github.com/vlad-iakovlev/grammy-reply-with-markdown.git",
-  "keywords": [
-    "grammy",
-    "telegram",
-    "markdown",
-    "md",
-    "reply",
-    "send",
-    "message",
-    "sendMessage"
-  ],
-  "author": "Vladislav Iakovlev",
-  "license": "MIT",
-  "bugs": "https://github.com/vlad-iakovlev/grammy-reply-with-markdown/issues",
-  "homepage": "https://github.com/vlad-iakovlev/grammy-reply-with-markdown#readme",
   "dependencies": {
     "@vlad-yakovlev/telegram-md": "^2.1.0"
   },
@@ -39,18 +39,14 @@
     "@types/node": "^22.19.0",
     "@types/node-fetch": "^2.6.13",
     "@vitest/coverage-v8": "^4.0.6",
-    "eslint": "9.38.0",
-    "eslint-config-prettier": "^10.1.8",
+    "@vlad-iakovlev/eslint-config": "^1.0.0",
+    "eslint": "^9.39.1",
     "grammy": "^1.38.3",
     "jiti": "^2.6.1",
     "lefthook": "^2.0.2",
     "prettier": "^3.6.2",
+    "prettier-plugin-packagejson": "^2.5.19",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.3",
     "vitest": "^4.0.3"
-  },
-  "overrides": {
-    "@eslint/config-helpers": "0.4.1",
-    "@eslint/plugin-kit": "0.4.0"
   }
 }
