@@ -35,13 +35,13 @@
     "@vlad-yakovlev/telegram-md": "^2.1.0"
   },
   "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^6.0.0",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.1",
     "@types/node": "^22.19.3",
     "@types/node-fetch": "^2.6.13",
     "@vitest/coverage-v8": "^4.0.16",
     "@vlad-iakovlev/eslint-config": "^1.0.0",
     "eslint": "^9.39.2",
-    "grammy": "^1.38.4",
+    "grammy": "^1.39.2",
     "jiti": "^2.6.1",
     "lefthook": "^2.0.13",
     "prettier": "^3.7.4",
