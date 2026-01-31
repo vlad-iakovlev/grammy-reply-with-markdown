@@ -43,7 +43,7 @@
     "eslint": "^9.39.2",
     "grammy": "^1.39.3",
     "jiti": "^2.6.1",
-    "lefthook": "^2.0.15",
+    "lefthook": "^2.0.16",
     "prettier": "^3.8.1",
     "prettier-plugin-packagejson": "^2.5.22",
     "typescript": "^5.9.3",
