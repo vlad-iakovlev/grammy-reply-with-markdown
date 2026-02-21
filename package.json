@@ -40,7 +40,7 @@
     "@types/node-fetch": "^2.6.13",
     "@vitest/coverage-v8": "^4.0.18",
     "@vlad-iakovlev/eslint-config": "^1.0.0",
-    "eslint": "^9.39.2",
+    "eslint": "^9.39.3",
     "grammy": "^1.40.0",
     "jiti": "^2.6.1",
     "lefthook": "^2.1.1",
