@@ -1,3 +1,5 @@
+# Project has migrated to https://github.com/vlad-iakovlev/telegram-md
+
 # grammy-reply-with-markdown
 
 replyWithMarkdown method for grammY. Uses [@vlad-yakovlev/telegram-md](https://www.npmjs.org/package/@vlad-yakovlev/telegram-md)
